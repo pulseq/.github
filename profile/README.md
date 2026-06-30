@@ -8,4 +8,4 @@ Pinned repositories and projects:
 
 ... more to come soon ...
 
-You can find generic Pulseq Discussions here: [Discussions](https://github.com/pulseq/pulseq/Discussions)
+You can find generic Pulseq Discussions here: [Discussions](https://github.com/pulseq/pulseq/discussions)
