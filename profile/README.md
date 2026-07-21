@@ -4,6 +4,8 @@ Pinned repositories and projects:
 
 [Pulseq-Matlab](https://github.com/pulseq/pulseq) 
 
+[pyPulseq](https://github.com/pulseq/pypulseq)
+
 [Pulseq Tutorials](https://github.com/pulseq/tutorials) 
 
 ... more to come soon ...
