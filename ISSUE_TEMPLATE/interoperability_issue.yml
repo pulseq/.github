@@ -1,0 +1,68 @@
+name: MATLAB/Python interoperability issue
+description: Report or discuss a difference between MATLAB Pulseq, PyPulseq, specifications, examples, or sequence interpretation
+title: "[Interoperability]: "
+labels: ["interoperability"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for cross-implementation differences, Pulseq file compatibility, or MATLAB/Python behavior mismatches.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe the interoperability issue.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: affected
+    attributes:
+      label: Affected area
+      options:
+        - Sequence file generation
+        - Sequence file parsing
+        - Timing validation
+        - Gradient/RF events
+        - ADC/readout behavior
+        - Labels/extensions
+        - Examples
+        - Documentation
+        - Scanner/vendor interpretation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: matlab_behavior
+    attributes:
+      label: MATLAB Pulseq behavior
+      description: Describe the observed or expected MATLAB Pulseq behavior.
+    validations:
+      required: false
+
+  - type: textarea
+    id: python_behavior
+    attributes:
+      label: PyPulseq behavior
+      description: Describe the observed or expected PyPulseq behavior.
+    validations:
+      required: false
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Minimal example or file
+      description: Include code, sequence file excerpts, or links.
+      render: text
+    validations:
+      required: false
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Explain how this affects users, examples, releases, validation, or scanner deployment.
+    validations:
+      required: false

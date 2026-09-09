@@ -1,0 +1,65 @@
+name: Governance proposal
+description: Propose a change to Pulseq organization governance, access, stewardship, or process
+title: "[Governance]: "
+labels: ["governance"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for organization-level governance proposals, access-model changes, maintainer nominations, repository stewardship, or process changes.
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What change are you proposing?
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this change needed?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - Organization-wide
+        - Repository-specific
+        - MATLAB Pulseq
+        - PyPulseq
+        - Specification or interoperability
+        - Maintainer or access rights
+        - Repository move, rename, archival, or transfer
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected
+    attributes:
+      label: Affected repositories or teams
+      description: Which repositories, teams, maintainers, or users are affected?
+    validations:
+      required: false
+
+  - type: textarea
+    id: consensus
+    attributes:
+      label: Consensus and decision path
+      description: Who should review this, and what decision process is proposed?
+    validations:
+      required: false
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks and mitigations
+      description: What could go wrong, and how should it be mitigated?
+    validations:
+      required: false
