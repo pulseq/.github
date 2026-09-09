@@ -1,0 +1,82 @@
+name: Large change proposal
+description: Propose a large, architectural, or multi-repository change before opening a large PR
+title: "[Large change]: "
+labels: ["proposal", "needs-discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please use this template before opening a large PR, architectural change, or change affecting multiple Pulseq repositories.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe the proposed change.
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: What problem does this solve?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - Single repository
+        - Multiple repositories
+        - MATLAB Pulseq
+        - PyPulseq
+        - MATLAB and Python
+        - Specification or file format
+        - Build, packaging, or release workflow
+        - Safety-related functionality
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: design
+    attributes:
+      label: Proposed design
+      description: Describe the design at a high level.
+    validations:
+      required: true
+
+  - type: textarea
+    id: staging
+    attributes:
+      label: Staging plan
+      description: How can this be split into smaller reviewable PRs?
+    validations:
+      required: true
+
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility and migration
+      description: Describe API, file format, MATLAB/Python, scanner/vendor, or user-facing compatibility impacts.
+    validations:
+      required: false
+
+  - type: textarea
+    id: validation
+    attributes:
+      label: Testing and validation plan
+      description: How should the change be tested?
+    validations:
+      required: false
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks
+      description: What are the technical, governance, maintenance, or community risks?
+    validations:
+      required: false

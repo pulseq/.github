@@ -1,22 +1,22 @@
-# Pulseq
+# Pulseq organization community health files
 
-Pulseq is an open ecosystem for vendor-neutral MRI sequence description, programming, validation, and exchange.
+This repository contains organization-level community health files, templates, and public-facing profile content for the Pulseq GitHub organization.
 
-The Pulseq GitHub organization brings together related implementations and tools, including MATLAB Pulseq and PyPulseq, with the goal of supporting transparent, interoperable, and sustainable MRI sequence development.
+These files provide default guidance for Pulseq repositories that do not define their own repository-specific versions.
 
-## Governance principles
+## Contents
 
-Pulseq repositories should follow these principles:
+- `profile/README.md` — public Pulseq organization profile
+- `GOVERNANCE.md` — organization-level governance principles
+- `CONTRIBUTING.md` — default contribution guidance
+- `CODE_OF_CONDUCT.md` — community conduct expectations
+- `SECURITY.md` — security reporting guidance
+- `SUPPORT.md` — support and discussion guidance
+- `PULL_REQUEST_TEMPLATE.md` — default pull request template
+- `ISSUE_TEMPLATE/` — default issue templates
 
-- Open development through GitHub issues, pull requests, and discussions.
-- FAIR software practices: Findable, Accessible, Interoperable, and Reusable.
-- Cross-implementation coordination between MATLAB Pulseq, PyPulseq, and related tools.
-- Distributed stewardship so that no repository depends on a single individual or group.
-- Consensus before moving, renaming, archiving, transferring, or substantially restructuring repositories.
-- Reviewable pull requests, with preference for small, focused changes over large unreviewable PRs.
+## Scope
 
-## Community
+These files are intended to support open, transparent, FAIR, and sustainable development across the Pulseq ecosystem, including MATLAB Pulseq, PyPulseq, and related tools.
 
-Pulseq welcomes contributors from the MRI physics, engineering, clinical, research, and open-source software communities.
-
-Major development directions, governance changes, and cross-language compatibility decisions should be discussed openly whenever possible.
+Repository-specific policies may override these defaults where needed.

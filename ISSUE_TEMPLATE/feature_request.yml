@@ -1,0 +1,63 @@
+name: Feature request
+description: Suggest a new feature or improvement
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting an improvement. Please describe the use case and expected impact.
+
+  - type: input
+    id: repository
+    attributes:
+      label: Repository
+      description: Which Pulseq repository does this affect?
+      placeholder: "e.g., pypulseq, MATLAB Pulseq, examples"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: implementation
+    attributes:
+      label: Implementation
+      options:
+        - MATLAB Pulseq
+        - PyPulseq
+        - Both MATLAB and PyPulseq
+        - Specification or file format
+        - Other or unknown
+    validations:
+      required: true
+
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Use case
+      description: What are you trying to accomplish?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the feature or change you propose.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe any workarounds or alternative designs.
+    validations:
+      required: false
+
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility considerations
+      description: Does this affect MATLAB/Python interoperability, sequence files, APIs, examples, or scanners?
+    validations:
+      required: false

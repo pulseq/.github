@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Pulseq community support
+    url: https://github.com/pulseq
+    about: Please choose the most relevant Pulseq repository for implementation-specific questions.
